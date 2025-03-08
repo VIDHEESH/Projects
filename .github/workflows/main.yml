@@ -12,16 +12,16 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Merge responsive Repository
+      - name: Merge Capstone-Project-HTML Repository
         run: |
-          git clone --depth 1 https://github.com/VIDHEESH/responsive.git temp
-          mkdir -p WebDevelopment/responsive
-          mv temp/* WebDevelopment/responsive/
+          git clone --depth 1 https://github.com/VIDHEESH/Capstone-Project-HTML.gittemp
+          mkdir -p WebDevelopment/Capstone-Project-HTML
+          mv temp/* WebDevelopment/Capstone-Project-HTML/
           rm -rf temp
           git config --global user.email "vidheesh1@gmail.com"
           git config --global user.name "VIDHEESH"
           git config --global credential.helper store
           echo "https://VIDHEESH:${{ secrets.GH_PAT }}@github.com" > ~/.git-credentials
           git add .
-          git commit -m "webdevelopment"
+          git commit -m "Capstone-Project-HTML"
           git push https://VIDHEESH:${{ secrets.GH_PAT }}@github.com/VIDHEESH/Projects.git main
