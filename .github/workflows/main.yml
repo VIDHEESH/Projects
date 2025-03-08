@@ -12,7 +12,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Merge save-a-life Repository
+      - name: Merge webdevelopment Repository
         run: |
           git clone --depth 1 https://github.com/VIDHEESH/webdevelopment.git temp
           mkdir -p WebDevelopment/webdevelopment
