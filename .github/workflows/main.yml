@@ -12,16 +12,16 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Merge Capstone-Project-HTML Repository
+      - name: Merge html-portfolio Repository
         run: |
-          git clone --depth 1 https://github.com/VIDHEESH/Capstone-Project-HTML.git temp
-          mkdir -p WebDevelopment/Capstone-Project-HTML
-          mv temp/* WebDevelopment/Capstone-Project-HTML/
+          git clone --depth 1 https://github.com/VIDHEESH/html-protfolio.git temp
+          mkdir -p WebDevelopment/html-portfolio
+          mv temp/* WebDevelopment/html-portfolio/
           rm -rf temp
           git config --global user.email "vidheesh1@gmail.com"
           git config --global user.name "VIDHEESH"
           git config --global credential.helper store
           echo "https://VIDHEESH:${{ secrets.GH_PAT }}@github.com" > ~/.git-credentials
           git add .
-          git commit -m "Capstone-Project-HTML"
+          git commit -m "html portfolio"
           git push https://VIDHEESH:${{ secrets.GH_PAT }}@github.com/VIDHEESH/Projects.git main
