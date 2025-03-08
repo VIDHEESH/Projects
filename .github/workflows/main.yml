@@ -12,11 +12,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Merge webdevelopment Repository
+      - name: Merge responsive Repository
         run: |
-          git clone --depth 1 https://github.com/VIDHEESH/webdevelopment.git temp
-          mkdir -p WebDevelopment/webdevelopment
-          mv temp/* WebDevelopment/webdevelopment/
+          git clone --depth 1 https://github.com/VIDHEESH/responsive.git temp
+          mkdir -p WebDevelopment/responsive
+          mv temp/* WebDevelopment/responsive/
           rm -rf temp
           git config --global user.email "vidheesh1@gmail.com"
           git config --global user.name "VIDHEESH"
