@@ -1,7 +1,7 @@
 name: Merge Repositories
 
 on:
-  workflow_dispatch:  # Allows manual trigger from GitHub Actions
+  workflow_dispatch:
 
 jobs:
   merge:
@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout `Projects` repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Merge Portfolio Repository
         run: |
@@ -18,6 +20,8 @@ jobs:
           rm -rf temp
           git config --global user.email "vidheesh1@gmail.com"
           git config --global user.name "VIDHEESH"
+          git config --global credential.helper store
+          echo "https://VIDHEESH:${{ secrets.GH_PAT }}@github.com" > ~/.git-credentials
           git add .
           git commit -m "Added Portfolio project"
-          git push origin main
+          git push https://VIDHEESH:${{ secrets.GH_PAT }}@github.com/VIDHEESH/Projects.git main
