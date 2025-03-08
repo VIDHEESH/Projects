@@ -14,14 +14,14 @@ jobs:
 
       - name: Merge save-a-life Repository
         run: |
-          git clone --depth 1 https://github.com/VIDHEESH/Save-a-Life.git temp
-          mkdir -p WebDevelopment/save-a-life
-          mv temp/* WebDevelopment/save-a-life/
+          git clone --depth 1 https://github.com/VIDHEESH/webdevelopment.git temp
+          mkdir -p WebDevelopment/webdevelopment
+          mv temp/* WebDevelopment/webdevelopment/
           rm -rf temp
           git config --global user.email "vidheesh1@gmail.com"
           git config --global user.name "VIDHEESH"
           git config --global credential.helper store
           echo "https://VIDHEESH:${{ secrets.GH_PAT }}@github.com" > ~/.git-credentials
           git add .
-          git commit -m "Added save-a-life project"
+          git commit -m "webdevelopment"
           git push https://VIDHEESH:${{ secrets.GH_PAT }}@github.com/VIDHEESH/Projects.git main
