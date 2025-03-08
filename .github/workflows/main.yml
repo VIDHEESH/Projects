@@ -14,7 +14,7 @@ jobs:
 
       - name: Merge Capstone-Project-HTML Repository
         run: |
-          git clone --depth 1 https://github.com/VIDHEESH/Capstone-Project-HTML.gittemp
+          git clone --depth 1 https://github.com/VIDHEESH/Capstone-Project-HTML.git temp
           mkdir -p WebDevelopment/Capstone-Project-HTML
           mv temp/* WebDevelopment/Capstone-Project-HTML/
           rm -rf temp
