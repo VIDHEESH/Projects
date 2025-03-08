@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidheesh Kumar Kasanagottu - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #f4f6f7;
+            --text-color: #2c3e50;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .gradient-background {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .profile-info p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.1);
+            padding: 10px 15px;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            transform: scale(1.1);
+            background: rgba(255,255,255,0.2);
+        }
+
+        .section {
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .project-card {
+            border-left: 5px solid var(--primary-color);
+            padding-left: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateX(15px);
+        }
+        .certifications-list a {
+    text-decoration: none;
+}
+
+.certification-tag {
+    display: inline-block;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.certification-tag:hover {
+    background: rgba(0, 255, 255, 0.2);
+    transform: scale(1.05);
+} font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-background">
+        <div class="container">
+            <div class="header">
+                <div class="profile-info">
+                    <h1 >Vidheesh Kumar Kasanagottu</h1>
+                    <p>Computer Science & Cybersecurity Student | Full-Stack Developer | Tech Enthusiast</p>
+                    <div class="contact-links">
+                        <a href="mailto:vidheesh1@gmail.com">Email</a>
+                        <a href="tel:+918142528590">Phone</a>
+                        <a href="https://github.com/VIDHEESH" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/vidheesh-kumar-k-041909195/" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <p><strong>Institute of Aeronautical Engineering, Hyderabad</strong></p>
+            <p>B.Tech in Computer Science and Engineering (Cyber Security)</p>
+            <p>Expected Graduation: May 2026 | GPA: 8.13/10.0</p>
+        </section>
+
+        <section class="section" id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <p>Java, Python, C</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Technologies</h3>
+                    <p>HTML, CSS, JavaScript, React.js</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Platforms</h3>
+                    <p>Linux, MySQL, AWS, Kali Linux</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Cybersecurity</h3>
+                    <p>Penetration Testing, Vulnerability Analysis</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-card">
+                <h3>Cross-Platform Reputation Generation System</h3>
+                <p>Advanced sentiment analysis system using Flask, Python, and ML algorithms</p>
+                <a href="https://github.com/VIDHEESH/Cross-Platform-reputation-generation-system-based-on-Aspect-Based-Sentimental-Analysis-ABSA-" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Save a Life</h3>
+                <p>Wildlife Conservation awareness React application with donation features</p>
+                <a href="https://github.com/VIDHEESH/Save-a-Life" target="_blank">View Project</a>
+            </div>
+        </section>
+
+        <section class="section" id="certifications">
+            <h2>Professional Certifications</h2>
+            <div class="certifications-list">
+                <a href="https://drive.google.com/file/d/1NZBZhvC1t3qgNdg7c1EFmAbVc0QFu5ZQ/view"><span class="certification-tag">Cyber Security - SWAYAM MHRD</span></a>
+                <a href="https://drive.google.com/file/d/11UCDctA8lmnKO5dBnQNqdpx2t_9qypi2/view"><span class="certification-tag">Python Programming - NPTEL</span></a>
+                <a href="https://drive.google.com/file/d/1nLqC4PbU3y2DPZgx3ONepHEJsCRlIeM1/view"><span class="certification-tag">Data Science - NSIC</span></a>
+                <a href="https://drive.google.com/file/d/18o4j7o-eCMYW_5qNFX0mNyDvDt6vPl5f/view"><span class="certification-tag">Java DSA - NPTEL</span></a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
