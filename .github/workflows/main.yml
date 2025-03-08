@@ -9,4 +9,3 @@
     git add .
     git commit -m "Added Portfolio"
     git push origin main
-  shell: bash
