@@ -1,0 +1,16 @@
+.learn-more-container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.learn-more-image {
+  width: 100%; /* 100% of the container width */
+  height: 100%; /* 100% of the container height */
+  object-fit: cover; /* Ensures the image covers the container */
+}

@@ -1,0 +1,71 @@
+/* Home.css */
+.home-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    background-image:url("../../assets/images/nature-prayer.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 20px;
+    text-align: center;
+  }
+  
+  .home-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    color: rgb(54, 69, 79); /* Cloudy sky color */
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    background:transparent;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .primary-button {
+    padding: 12px 32px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .primary-button:hover {
+    background-color: #0052a3;
+  }
+  
+  .secondary-button {
+    padding: 12px 32px;
+    background-color: white;
+    color: #0066cc;
+    border: 2px solid #0066cc;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .secondary-button:hover {
+    background-color: #f0f7ff;
+  }

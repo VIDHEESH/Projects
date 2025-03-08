@@ -1,0 +1,108 @@
+/* Profile.css */
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.profile-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.profile-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 2px solid #0066cc; /* Adding an underline for formality */
+  padding-bottom: 10px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Subtle border for clean separation */
+  flex-wrap: wrap;
+}
+
+.info-group label {
+  font-weight: bold;
+  color: #333; /* Darker text for a professional look */
+  flex: 1;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.edit-button, .save-button, .logout-button, .cancel-button {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+  min-width: 120px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button, .cancel-button {
+  background-color: #dc3545;
+}
+
+.edit-button:hover, .save-button:hover, .logout-button:hover, .cancel-button:hover {
+  background-color: #0052a3;
+}
+
+.logout-button:hover, .cancel-button:hover {
+  background-color: #bd2130;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group-checkbox input[type="checkbox"] {
+  width: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-box {
+    padding: 20px;
+  }
+
+  .profile-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
