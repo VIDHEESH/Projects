@@ -1,22 +1,12 @@
-name: Merge Repositories into Projects
-
-on:
-  workflow_dispatch:  # Allows manual trigger from GitHub Actions
-
-jobs:
-  merge:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout `Projects` repo
-        uses: actions/checkout@v3
-
-      - name: Merge portfolio
-        run: |
-          git clone --depth 1 https://github.com/VIDHEESH/portfolio.git temp
-          mkdir -p WebDevelopment/Portfolio
-          mv temp/* WebDevelopment/Portfolio/
-          rm -rf temp
-          git add .
-          git commit -m "Added Portfolio"
-          git push origin main
-
+- name: Merge Repositories
+  run: |
+    git clone --depth 1 https://github.com/VIDHEESH/portfolio.git temp
+    mkdir -p WebDevelopment/Portfolio
+    mv temp/* WebDevelopment/Portfolio/
+    rm -rf temp
+    git config --global user.email "vidheesh1@gmail.com"
+    git config --global user.name "VIDHEESH"
+    git add .
+    git commit -m "Added Portfolio"
+    git push origin main
+  shell: bash
